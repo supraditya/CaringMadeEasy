@@ -1,0 +1,20 @@
+.Parallax
+{
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+    margin: auto;
+    height: 500px;
+    width: 80%;
+    float: right !important;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+}
+.ParallaxContainer
+{
+    background-color: #FEF8EC;
+    margin: auto;
+    padding: 25px 10px;
+    width: 90%;
+}
