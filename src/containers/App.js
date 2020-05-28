@@ -11,7 +11,7 @@ class App extends Component{
   {
     return (
       <div className="App">
-        <h1>Caring Made Easy</h1>
+        <h1>Caring Made Easy | Bulletin</h1>
         <Parallax url={Image1} title="" content=""/>
         <Parallax url={Image2} title="" content=""/>
         <Parallax url={Image3} title="" content=""/>
