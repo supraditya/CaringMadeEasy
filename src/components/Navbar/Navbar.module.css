@@ -1,0 +1,26 @@
+.listStyle
+{
+    width: 100%;
+    list-style-type: none;
+    display: table;
+    border: solid 1px black;
+}
+.link
+{
+    text-decoration: none;
+}
+.listItemStyle
+{
+    display: table-cell;
+    width: 50%;
+    border: solid 1px black;
+
+}
+.navbar-brand
+{
+    text-align: center;
+}
+.logoStyle
+{
+    color: #fff;
+}

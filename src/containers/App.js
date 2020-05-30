@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
 import './App.css';
-import Parallax from '../components/Parallax/Parallax';
-import Image1 from '../assets/Image1.jpg';
-import Image2 from '../assets/Image2.jpg';
-import Image3 from '../assets/Image3.jpg';
-import Image4 from '../assets/Image4.jpg';
-import Image5 from '../assets/Image5.jpg';
+import Bulletin from '../components/Bulletin/Bulletin';
+import Categories from '../components/Categories/Categories';
+import Navbar from '../components/Navbar/Navbar';
+import {BrowserRouter, Route} from 'react-router-dom';
+// Work on a navbar for 2 options : Bulletin and categories
+// Add Read More button functionality
 class App extends Component{
   render()
   {
     return (
-      <div className="App">
-        <h1>Caring Made Easy | Bulletin</h1>
-        <Parallax url={Image1} title="" content=""/>
-        <Parallax url={Image2} title="" content=""/>
-        <Parallax url={Image3} title="" content=""/>
-        <Parallax url={Image4} title="" content=""/>
-        <Parallax url={Image5} title="" content=""/>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar/>
+          <Route exact path='/' component={Bulletin}/>
+          <Route path='/categories' component={Categories}/>
+          {/* <h1>Caring Made Easy | Bulletin</h1> */}
+        </div>
+      </BrowserRouter>
     );
   }
 }

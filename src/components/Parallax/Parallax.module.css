@@ -22,7 +22,7 @@
 }
 .buttonStyle
 {
-    transition: all 0.3s;
+    transition: all 0.2s;
     background-color: transparent;
     border: solid 1 px black;
     border-color: rgb(30, 120, 238);
@@ -34,7 +34,7 @@
 }
 .buttonStyle:hover
 {
-    transition: all 0.3s;
+    transition: all 0.2s;
     background-color: rgb(30, 120, 238);
     color: #fff;
 }
