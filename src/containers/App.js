@@ -15,7 +15,6 @@ class App extends Component{
           <Navbar/>
           <Route exact path='/' component={Bulletin}/>
           <Route path='/categories' component={Categories}/>
-          {/* <h1>Caring Made Easy | Bulletin</h1> */}
         </div>
       </BrowserRouter>
     );
