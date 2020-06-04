@@ -10,7 +10,7 @@ const Navbar=()=>{
                             <p className="navbar-brand">Caring Made Easy</p>
                         </div>
                         <ul className="nav navbar-nav">
-                        <li><NavLink to="/">Bulletin</NavLink></li>
+                        <li><NavLink to="/">Must Read</NavLink></li>
                         <li><NavLink to="/categories">Categories</NavLink></li>
                         </ul>
                 </div>

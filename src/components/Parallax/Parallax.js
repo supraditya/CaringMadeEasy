@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import classes from './Parallax.module.css';
 const style={
     fontSize: '24px',
@@ -11,16 +11,31 @@ const h1Style={
     padding: '10px 25px',
     margin: '4px'
 }
+const h6Style={
+    fontSize: '18px',
+    textAlign:'left',
+    padding: '10px 28px',
+    margin: '4px',
+    opacity: '0.8'
+}
 
-const Parallax=(props)=>{
-    return(
-        <div className={classes.ParallaxContainer}>
-            <h1 style={h1Style}>Article Title</h1>
-            <div className={classes.Parallax} style={{ backgroundImage: `url(${props.url})`}}></div>
-            <p style={style}>Consectetur ex ad in laboris ea nulla eiusmod id magna elit mollit id non occaecat. Laborum sunt consectetur elit ex officia velit aliqua consectetur dolore sit mollit dolore consectetur culpa. Non esse excepteur magna nulla officia dolore occaecat veniam velit mollit. Proident culpa aute pariatur fugiat aliquip quis reprehenderit non quis minim. Lorem sunt nulla cupidatat officia irure nostrud nisi. Adipisicing excepteur aliquip magna dolore occaecat aliquip culpa nulla cillum cillum ullamco ut. Adipisicing aliqua consectetur cillum non exercitation anim dolore ipsum. Proident excepteur ea ullamco in et nulla exercitation magna ex eu duis voluptate do. Eiusmod excepteur non id sint nisi anim aliqua esse eu adipisicing. Ut sint aliquip sint cillum cillum ipsum. Reprehenderit occaecat aliquip ea aute aute velit id commodo minim pariatur. Dolore incididunt labore labore velit reprehenderit ipsum esse enim ullamco cupidatat aliquip aliquip eiusmod Lorem. Ut voluptate ullamco deserunt laboris aute esse amet quis. Voluptate ad duis cupidatat eiusmod Lorem veniam laboris.</p>
-            <button className={classes.buttonStyle}>READ MORE</button>
-            <hr className={classes.solid}></hr>
-        </div>
-    );
+class Parallax extends Component{
+    btnClick() {
+        window.open("https://www.udayfoundation.org/coronavirus-disease-covid-19/");
+    }
+    render()
+    {
+        return(
+            <div className={classes.ParallaxContainer}>
+                <h1 style={h1Style}>{this.props.title}</h1>
+                <h6 style={h6Style}>By: {this.props.author}</h6>
+                <div className={classes.Parallax} style={{ backgroundImage: `url(${this.props.url})`}}></div>
+                <p style={style}>{this.props.content}</p>
+                <button className={classes.buttonStyle} onClick={this.btnClick}>READ MORE</button>
+                <hr className={classes.solid}></hr>
+            </div>
+        );
+    }
 }
 export default Parallax;
+
