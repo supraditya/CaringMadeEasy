@@ -32,7 +32,7 @@ const Categories=()=>{
             <Card imagePath="https://media-exp1.licdn.com/dms/image/C4E1BAQEt1SKgHBjfcA/company-background_10000/0?e=2159024400&v=beta&t=7ZMp8h6Lw12iCERsL11OWb2a5s96-wjXDCIl0QGS68E" title="Animal Welfare" 
             contentPath="Identifying species in crisis and to work for their betterment." 
             buttonPath=""/>
-            <Card imagePath="https://lh3.googleusercontent.com/proxy/Cr5K8khSv0Qt7KMCegYvtrbPhz1ertzEyCe0bfIUNp1AtJvRqPXB53BJdaCgwbsvsQvlzQpl27yKbWXyT9Lns4KnaebWumh2A-X1LT3cPOq4p8pkeVW2oAH-bOfl6P4rutTdIoBkn8S9UCPnJywJzgIkZ-obCW3AOTLpZu4" title="Child Welfare" 
+            <Card imagePath="http://kemptonexpress.sites.caxton.co.za/wp-content/uploads/sites/30/2015/06/Childrenrights_64173.jpg" title="Child Welfare" 
             contentPath="To ensure that the future of our race reaches their fullest potential." 
             buttonPath=""/>
             <Card imagePath="https://m.economictimes.com/thumb/msid-70927588,width-1200,height-900,resizemode-4,imgsize-557494/13.jpg" title="Scientific Research" 
